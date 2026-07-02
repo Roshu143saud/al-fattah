@@ -1,13 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Al-Fattah Car Garage</title>
+
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#0f172a,#1e293b);
+    background:#111827;
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -16,110 +24,70 @@ body{
 }
 
 form{
-    background:#ffffff;
+    background:#fff;
     width:100%;
     max-width:500px;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 20px 50px rgba(0,0,0,0.2);
-}
-
-form::before{
-    content:"AL-FATTAH CAR GARAGE";
-    display:block;
-    text-align:center;
-    font-size:28px;
-    font-weight:700;
-    color:#111827;
-    margin-bottom:8px;
-}
-
-form::after{
-    content:"Vehicle Service Registration";
-    display:block;
-    text-align:center;
-    color:#6b7280;
-    font-size:14px;
-    margin-top:-5px;
-    margin-bottom:25px;
+    padding:30px;
+    border-radius:15px;
 }
 
 label{
     display:block;
-    margin-bottom:8px;
     margin-top:15px;
-    color:#374151;
-    font-size:14px;
-    font-weight:600;
+    margin-bottom:5px;
 }
 
 input[type="text"]{
     width:100%;
-    padding:14px;
-    border:2px solid #e5e7eb;
-    border-radius:10px;
-    font-size:15px;
-    transition:all 0.3s ease;
-}
-
-input[type="text"]:focus{
-    outline:none;
-    border-color:#f59e0b;
-    box-shadow:0 0 10px rgba(245,158,11,0.2);
+    padding:12px;
 }
 
 input[type="submit"]{
     width:100%;
-    margin-top:30px;
-    padding:16px;
-    background:#f59e0b;
+    margin-top:20px;
+    padding:15px;
+    background:orange;
     color:white;
     border:none;
-    border-radius:10px;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-input[type="submit"]:hover{
-    background:#d97706;
-    transform:translateY(-2px);
 }
 
 br{
     display:none;
 }
-
-@media (max-width:768px){
-    body{
-        padding:15px;
-        align-items:flex-start;
-    }
-
-    form{
-        padding:25px;
-    }
-
-    form::before{
-        font-size:22px;
-    }
-}
-
-@media (max-width:480px){
-    form{
-        padding:20px;
-        border-radius:15px;
-    }
-
-    input[type="text"]{
-        padding:12px;
-        font-size:14px;
-    }
-
-    input[type="submit"]{
-        padding:14px;
-        font-size:15px;
-    }
-}
 </style>
+</head>
+
+<body>
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdL00000wSdoD" method="POST">
+
+<input type="hidden" name="oid" value="00DdL00000wSdoD">
+<input type="hidden" name="retURL" value="https://saud7.netlify.app/">
+
+<label>First Name</label>
+<input id="first_name" maxlength="40" name="first_name" type="text">
+
+<label>Last Name</label>
+<input id="last_name" maxlength="80" name="last_name" type="text">
+
+<label>Email</label>
+<input id="email" maxlength="80" name="email" type="text">
+
+<label>Company</label>
+<input id="company" maxlength="40" name="company" type="text">
+
+<label>City</label>
+<input id="city" maxlength="40" name="city" type="text">
+
+<label>Mobile</label>
+<input id="mobile" maxlength="40" name="mobile" type="text">
+
+<label>Car Name</label>
+<input id="00NdL00002TNNjn" maxlength="50" name="00NdL00002TNNjn" type="text">
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
