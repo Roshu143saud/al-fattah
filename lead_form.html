@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Al-Fattah Car Garage - Lead Registration</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#111827,#1f2937);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+}
+
+.form-card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.3);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo h1{
+    color:#111827;
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo p{
+    color:#6b7280;
+    margin-top:5px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group.full{
+    grid-column:1/3;
+}
+
+label{
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+    color:#374151;
+}
+
+input,
+select{
+    padding:14px;
+    border:2px solid #e5e7eb;
+    border-radius:10px;
+    font-size:15px;
+    transition:all .3s;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#f59e0b;
+    box-shadow:0 0 10px rgba(245,158,11,.2);
+}
+
+.submit-btn{
+    width:100%;
+    margin-top:30px;
+    padding:16px;
+    border:none;
+    border-radius:10px;
+    background:#f59e0b;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#d97706;
+    transform:translateY(-2px);
+}
+
+.footer{
+    text-align:center;
+    margin-top:20px;
+    color:#6b7280;
+    font-size:13px;
+}
+
+@media(max-width:768px){
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-group.full{
+        grid-column:auto;
+    }
+
+    .form-card{
+        padding:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="form-card">
+
+<div class="logo">
+    <h1>AL-FATTAH CAR GARAGE</h1>
+    <p>Vehicle Service & Maintenance Registration</p>
+</div>
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdL00000wSdoD" method="POST">
+
+<input type="hidden" name="oid" value="00DdL00000wSdoD">
+<input type="hidden" name="retURL" value="https://yourwebsite.com/thankyou">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>First Name</label>
+<input type="text" name="first_name" maxlength="40" required>
+</div>
+
+<div class="form-group">
+<label>Last Name</label>
+<input type="text" name="last_name" maxlength="80" required>
+</div>
+
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" name="email" maxlength="80" required>
+</div>
+
+<div class="form-group">
+<label>Business/Organization</label>
+<input type="text" name="company" maxlength="40">
+</div>
+
+<div class="form-group">
+<label>City</label>
+<input type="text" name="city" maxlength="40">
+</div>
+
+<div class="form-group">
+<label>Country</label>
+<select name="country_code">
+    <option value="">Select Country</option>
+    <option value="IN">India</option>
+    <option value="AE">United Arab Emirates</option>
+    <option value="SA">Saudi Arabia</option>
+    <option value="KW">Kuwait</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>State</label>
+<select name="state_code">
+    <option value="">Select State</option>
+    <option value="AP">Andhra Pradesh</option>
+    <option value="TG">Telangana</option>
+    <option value="KA">Karnataka</option>
+    <option value="TN">Tamil Nadu</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Vehicle Name</label>
+<input type="text" id="00NdL00002TNNjn"
+name="00NdL00002TNNjn"
+maxlength="50">
+</div>
+
+</div>
+
+<button class="submit-btn" type="submit">
+Register Service Request
+</button>
+
+</form>
+
+<div class="footer">
+© 2026 Al-Fattah Car Garage | Professional Vehicle Care Services
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
